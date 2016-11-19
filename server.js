@@ -108,7 +108,7 @@ var app = alexa.app("CalculusBuddy")
 					var pod = pods.pod[i];
 					var podTitle = pod.title;
 
-					if (podTitle === "Plots") {
+					if (podTitle.toLowerCase().includes("plot") || podTitle === "Alternate forms") {
 						continue;
 					}
 
@@ -128,12 +128,12 @@ var app = alexa.app("CalculusBuddy")
 
 				console.log(JSON.stringify(resultObj, null, 2));
 				var keys = Object.keys(resultObj);
-				var response = "Here are some answers and information: ";
+				var response = "<speak>Here are some answers and information: ";
 				
 				for (var i = 0; i < keys.length; i++) {
 					var key = keys[i];
 					var values = resultObj[key];
-					response += "The " + key + ((values.length > 2) ? " are " : " is ");
+					response += "<s>The " + key + ((values.length > 2) ? " are " : " is ");
 
 					for (var j = 0; j < values.length; j++) {
 						var value = values[j];
@@ -143,13 +143,14 @@ var app = alexa.app("CalculusBuddy")
 							response += ", and ";
 						} else {
 							if ((i + 1) < keys.length) {
-								response += ". ";
+								response += ".</s>";
 							}
 						}
 					}
 				}
 
-				response += ".";
+				response += ".</s></speak>";
+				console.log(response);
 
 				res.prompt(response).endSession(true).send();
 			})
