@@ -129,23 +129,32 @@ var app = alexa.app("CalculusBuddy")
 				console.log(JSON.stringify(resultObj, null, 2));
 				var keys = Object.keys(resultObj);
 				var response = "<speak>Here are some answers and information: ";
-				
+				var miniResponse = "";
+
 				for (var i = 0; i < keys.length; i++) {
 					var key = keys[i];
 					var values = resultObj[key];
-					response += "<s>The " + key + ((values.length > 2) ? " are " : " is ");
+					miniResponse += "<s>The " + key + ((values.length > 2) ? " are " : " is ");
 
 					for (var j = 0; j < values.length; j++) {
 						var value = values[j];
-						response += value;
+						if (!value) {
+							miniResponse = "";
+							break;
+						}
+						miniResponse += value;
 
 						if ((j + 1) < values.length) {
-							response += ", and ";
+							miniResponse += ", and ";
 						} else {
 							if ((i + 1) < keys.length) {
-								response += ".</s>";
+								miniResponse += ".</s>";
 							}
 						}
+					}
+
+					if (miniResponse.length) {
+						response += miniResponse;
 					}
 				}
 
