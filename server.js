@@ -179,6 +179,6 @@ var app = alexa.app("CalculusBuddy")
 			.endSession(true)
 			.send();
 	})
-	.host("/solve", PORT, false, true);
+	.host("/solve", PORT, false, false);
 
 console.log("Server started on port " + PORT);
