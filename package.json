@@ -17,8 +17,10 @@
   },
   "homepage": "https://github.com/tejashah88/Calculus-Buddy#readme",
   "dependencies": {
+    "alexa-app": "^3.0.0",
     "alexa-utils": "^0.2.9",
     "alexa-verifier-middleware": "0.0.6",
+    "express": "^4.14.1",
     "wajs": "0.0.16"
   }
 }
