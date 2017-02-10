@@ -186,7 +186,7 @@ console.log("Server started on port " + PORT);*/
 var express = require("express");
 var alexa = require("alexa-app");
 
-var PORT = process.env.port || 8080;
+var PORT = process.env.PORT || 8080;
 var app = express();
 
 // ALWAYS setup the alexa app and attach it to express before anything else.
