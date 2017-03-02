@@ -1,0 +1,110 @@
+{
+  "pod": [
+    {
+      "subpod": [
+        {
+          "img": [
+            {
+              "src": "http://www5a.wolframalpha.com/Calculate/MSP/MSP57181f5abb434eb8028a00005198hc6766gbb986?MSPStoreType=image/gif&s=17",
+              "alt": "solve x = 2 y + 3\ny = 5 x - 2",
+              "title": "solve x = 2 y + 3\ny = 5 x - 2",
+              "width": "163",
+              "height": "61"
+            }
+          ],
+          "plaintext": [
+            "solve x = 2 y + 3\ny = 5 x - 2"
+          ],
+          "title": ""
+        }
+      ],
+      "title": "Input interpretation",
+      "scanner": "Identity",
+      "id": "Input",
+      "position": "100",
+      "error": "false",
+      "numsubpods": "1"
+    },
+    {
+      "subpod": [
+        {
+          "img": [
+            {
+              "src": "http://www5a.wolframalpha.com/Calculate/MSP/MSP57191f5abb434eb8028a00002d1ca9d651fb9472?MSPStoreType=image/gif&s=17",
+              "alt": "x = 1/9 and y = -13/9",
+              "title": "x = 1/9 and y = -13/9",
+              "width": "140",
+              "height": "37"
+            }
+          ],
+          "plaintext": [
+            "x = 1/9 and y = -13/9"
+          ],
+          "title": ""
+        }
+      ],
+      "states": [
+        {
+          "state": [
+            {
+              "name": "Approximate form",
+              "input": "Result__Approximate form"
+            },
+            {
+              "name": "Step-by-step solution",
+              "input": "Result__Step-by-step solution"
+            }
+          ],
+          "count": "2"
+        }
+      ],
+      "title": "Result",
+      "scanner": "Solve",
+      "id": "Result",
+      "position": "200",
+      "error": "false",
+      "numsubpods": "1",
+      "primary": "true"
+    },
+    {
+      "subpod": [
+        {
+          "img": [
+            {
+              "src": "http://www5a.wolframalpha.com/Calculate/MSP/MSP57201f5abb434eb8028a000040546igd92i5b5fd?MSPStoreType=image/gif&s=17",
+              "alt": "",
+              "title": "",
+              "width": "387",
+              "height": "290"
+            }
+          ],
+          "plaintext": [
+            ""
+          ],
+          "title": ""
+        }
+      ],
+      "title": "Implicit plot",
+      "scanner": "Solve",
+      "id": "PlotOfSolutionSet",
+      "position": "300",
+      "error": "false",
+      "numsubpods": "1"
+    }
+  ],
+  "success": "true",
+  "error": "false",
+  "numpods": "3",
+  "datatypes": "Solve",
+  "timedout": "",
+  "timedoutpods": "",
+  "timing": "1.313",
+  "parsetiming": "0.6920000000000001",
+  "parsetimedout": "false",
+  "recalculate": "",
+  "id": "MSPa57161f5abb434eb8028a00003dc2490081g52g34",
+  "host": "http://www5a.wolframalpha.com",
+  "server": "17",
+  "related": "http://www5a.wolframalpha.com/api/v2/relatedQueries.jsp?id=MSPa57171f5abb434eb8028a0000316532951b05dga96595592588476341190",
+  "version": "2.6"
+}

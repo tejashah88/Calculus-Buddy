@@ -1,0 +1,244 @@
+{
+  "pod": [
+    {
+      "subpod": [
+        {
+          "img": [
+            {
+              "src": "http://www5a.wolframalpha.com/Calculate/MSP/MSP22091biif3422i5df10200005cb424ig8geaiah3?MSPStoreType=image/gif&s=38",
+              "alt": " integral (10 x^2 + sin^2(x)) dx + 5 x",
+              "title": " integral (10 x^2 + sin^2(x)) dx + 5 x",
+              "width": "175",
+              "height": "34"
+            }
+          ],
+          "plaintext": [
+            " integral (10 x^2 + sin^2(x)) dx + 5 x"
+          ],
+          "title": ""
+        }
+      ],
+      "title": "Input",
+      "scanner": "Identity",
+      "id": "Input",
+      "position": "100",
+      "error": "false",
+      "numsubpods": "1"
+    },
+    {
+      "subpod": [
+        {
+          "img": [
+            {
+              "src": "http://www5a.wolframalpha.com/Calculate/MSP/MSP22101biif3422i5df102000012i23h6e8baah8fg?MSPStoreType=image/gif&s=38",
+              "alt": "(10 x^3)/3 + (11 x)/2 - 1/4 sin(2 x)",
+              "title": "(10 x^3)/3 + (11 x)/2 - 1/4 sin(2 x)",
+              "width": "165",
+              "height": "40"
+            }
+          ],
+          "plaintext": [
+            "(10 x^3)/3 + (11 x)/2 - 1/4 sin(2 x)"
+          ],
+          "title": "",
+          "primary": "true"
+        }
+      ],
+      "title": "Result",
+      "scanner": "Identity",
+      "id": "Result",
+      "position": "200",
+      "error": "false",
+      "numsubpods": "1",
+      "primary": "true"
+    },
+    {
+      "subpod": [
+        {
+          "img": [
+            {
+              "src": "http://www5a.wolframalpha.com/Calculate/MSP/MSP22111biif3422i5df102000017dfdhc2fd397bf3?MSPStoreType=image/gif&s=38",
+              "alt": "",
+              "title": "",
+              "width": "347",
+              "height": "144"
+            }
+          ],
+          "plaintext": [
+            ""
+          ],
+          "title": ""
+        },
+        {
+          "img": [
+            {
+              "src": "http://www5a.wolframalpha.com/Calculate/MSP/MSP22121biif3422i5df102000044i2bdd3f8g18ega?MSPStoreType=image/gif&s=38",
+              "alt": "",
+              "title": "",
+              "width": "333",
+              "height": "144"
+            }
+          ],
+          "plaintext": [
+            ""
+          ],
+          "title": ""
+        }
+      ],
+      "title": "Plots",
+      "scanner": "Plotter",
+      "id": "Plot",
+      "position": "300",
+      "error": "false",
+      "numsubpods": "2"
+    },
+    {
+      "subpod": [
+        {
+          "img": [
+            {
+              "src": "http://www5a.wolframalpha.com/Calculate/MSP/MSP22131biif3422i5df102000038f550d5aac10hh3?MSPStoreType=image/gif&s=38",
+              "alt": "1/6 (20 x^3 + 33 x - 3 sin(x) cos(x))",
+              "title": "1/6 (20 x^3 + 33 x - 3 sin(x) cos(x))",
+              "width": "208",
+              "height": "36"
+            }
+          ],
+          "plaintext": [
+            "1/6 (20 x^3 + 33 x - 3 sin(x) cos(x))"
+          ],
+          "title": ""
+        },
+        {
+          "img": [
+            {
+              "src": "http://www5a.wolframalpha.com/Calculate/MSP/MSP22141biif3422i5df10200006a0121c8d555fc3g?MSPStoreType=image/gif&s=38",
+              "alt": "1/12 (40 x^3 + 66 x - 3 sin(2 x))",
+              "title": "1/12 (40 x^3 + 66 x - 3 sin(2 x))",
+              "width": "185",
+              "height": "36"
+            }
+          ],
+          "plaintext": [
+            "1/12 (40 x^3 + 66 x - 3 sin(2 x))"
+          ],
+          "title": ""
+        },
+        {
+          "img": [
+            {
+              "src": "http://www5a.wolframalpha.com/Calculate/MSP/MSP22151biif3422i5df10200004hfhe3c2e8d4d4g4?MSPStoreType=image/gif&s=38",
+              "alt": "(10 x^3)/3 + (11 x)/2 - 1/2 sin(x) cos(x)",
+              "title": "(10 x^3)/3 + (11 x)/2 - 1/2 sin(x) cos(x)",
+              "width": "196",
+              "height": "39"
+            }
+          ],
+          "plaintext": [
+            "(10 x^3)/3 + (11 x)/2 - 1/2 sin(x) cos(x)"
+          ],
+          "title": ""
+        }
+      ],
+      "states": [
+        {
+          "state": [
+            {
+              "name": "More",
+              "input": "AlternateForm__More"
+            }
+          ],
+          "count": "1"
+        }
+      ],
+      "title": "Alternate forms",
+      "scanner": "Simplification",
+      "id": "AlternateForm",
+      "position": "400",
+      "error": "false",
+      "numsubpods": "3"
+    },
+    {
+      "subpod": [
+        {
+          "img": [
+            {
+              "src": "http://www5a.wolframalpha.com/Calculate/MSP/MSP22161biif3422i5df10200003bh0839deaf46h4i?MSPStoreType=image/gif&s=38",
+              "alt": "5 x + (11 x^3)/3 - x^5/15 + O(x^6)\n(Taylor series)",
+              "title": "5 x + (11 x^3)/3 - x^5/15 + O(x^6)\n(Taylor series)",
+              "width": "161",
+              "height": "58"
+            }
+          ],
+          "plaintext": [
+            "5 x + (11 x^3)/3 - x^5/15 + O(x^6)\n(Taylor series)"
+          ],
+          "title": ""
+        }
+      ],
+      "infos": [
+        {
+          "info": [
+            {
+              "link": [
+                {
+                  "url": "http://mathworld.wolfram.com/Big-ONotation.html",
+                  "text": "Big‐O notation"
+                }
+              ]
+            }
+          ],
+          "count": "1"
+        }
+      ],
+      "title": "Series expansion of the integral at x=0",
+      "scanner": "Series",
+      "id": "SeriesExpansionOfTheIntegralAt `1`x=0.",
+      "position": "500",
+      "error": "false",
+      "numsubpods": "1"
+    },
+    {
+      "subpod": [
+        {
+          "img": [
+            {
+              "src": "http://www5a.wolframalpha.com/Calculate/MSP/MSP22171biif3422i5df10200005e642hce25c0g01e?MSPStoreType=image/gif&s=38",
+              "alt": " integral (10 x^2 + sin^2(x)) dx + 5 x = (constant + 1/6 (20 x^3 + 3 x - 3 sin(x) cos(x))) + 5 x",
+              "title": " integral (10 x^2 + sin^2(x)) dx + 5 x = (constant + 1/6 (20 x^3 + 3 x - 3 sin(x) cos(x))) + 5 x",
+              "width": "516",
+              "height": "36"
+            }
+          ],
+          "plaintext": [
+            " integral (10 x^2 + sin^2(x)) dx + 5 x = (constant + 1/6 (20 x^3 + 3 x - 3 sin(x) cos(x))) + 5 x"
+          ],
+          "title": "",
+          "primary": "true"
+        }
+      ],
+      "title": "Indefinite integral",
+      "scanner": "Integral",
+      "id": "IndefiniteIntegral",
+      "position": "600",
+      "error": "false",
+      "numsubpods": "1",
+      "primary": "true"
+    }
+  ],
+  "success": "true",
+  "error": "false",
+  "numpods": "6",
+  "datatypes": "Math",
+  "timedout": "",
+  "timedoutpods": "",
+  "timing": "3.192",
+  "parsetiming": "1.68",
+  "parsetimedout": "false",
+  "recalculate": "",
+  "id": "MSPa22071biif3422i5df10200003fc2adaf95d71d5f",
+  "host": "http://www5a.wolframalpha.com",
+  "server": "38",
+  "related": "http://www5a.wolframalpha.com/api/v2/relatedQueries.jsp?id=MSPa22081biif3422i5df10200003f17g28da9h3f5b55070578756676495053",
+  "version": "2.6"
+}
