@@ -1,0 +1,79 @@
+{
+  "pod": [
+    {
+      "subpod": [
+        {
+          "img": [
+            {
+              "src": "http://www5a.wolframalpha.com/Calculate/MSP/MSP2681g55ca7ci8fgg61g00005gi1511ga2eh973a?MSPStoreType=image/gif&s=32",
+              "alt": "solve x = 2 y + 3\ny = 5 x - 2",
+              "title": "solve x = 2 y + 3\ny = 5 x - 2",
+              "width": "163",
+              "height": "61"
+            }
+          ],
+          "title": ""
+        }
+      ],
+      "title": "Input interpretation",
+      "scanner": "Identity",
+      "id": "Input",
+      "position": "100",
+      "error": "false",
+      "numsubpods": "1"
+    },
+    {
+      "subpod": [
+        {
+          "img": [
+            {
+              "src": "http://www5a.wolframalpha.com/Calculate/MSP/MSP2691g55ca7ci8fgg61g000020467ff51b30a4gf?MSPStoreType=image/gif&s=32",
+              "alt": "x = 1/9 and y = -13/9",
+              "title": "x = 1/9 and y = -13/9",
+              "width": "140",
+              "height": "37"
+            }
+          ],
+          "title": ""
+        }
+      ],
+      "states": [
+        {
+          "state": [
+            {
+              "name": "Approximate form",
+              "input": "Result__Approximate form"
+            },
+            {
+              "name": "Step-by-step solution",
+              "input": "Result__Step-by-step solution"
+            }
+          ],
+          "count": "2"
+        }
+      ],
+      "title": "Result",
+      "scanner": "Solve",
+      "id": "Result",
+      "position": "200",
+      "error": "false",
+      "numsubpods": "1",
+      "primary": "true"
+    }
+  ],
+  "success": "true",
+  "error": "false",
+  "numpods": "2",
+  "datatypes": "Solve",
+  "timedout": "",
+  "timedoutpods": "",
+  "timing": "1.168",
+  "parsetiming": "0.706",
+  "parsetimedout": "false",
+  "recalculate": "",
+  "id": "MSPa2661g55ca7ci8fgg61g0000557e76h7g935a96i",
+  "host": "http://www5a.wolframalpha.com",
+  "server": "32",
+  "related": "http://www5a.wolframalpha.com/api/v2/relatedQueries.jsp?id=MSPa2671g55ca7ci8fgg61g000027e231i8baeg4if35078011455282822963",
+  "version": "2.6"
+}

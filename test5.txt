@@ -1,0 +1,79 @@
+{
+  "pod": [
+    {
+      "subpod": [
+        {
+          "img": [
+            {
+              "src": "http://www5a.wolframalpha.com/Calculate/MSP/MSP34921f3b63i344ch68eh00002ig8235b4ce2023a?MSPStoreType=image/gif&s=35",
+              "alt": "roots x^2 - 2 = 0",
+              "title": "roots x^2 - 2 = 0",
+              "width": "158",
+              "height": "35"
+            }
+          ],
+          "title": ""
+        }
+      ],
+      "title": "Input interpretation",
+      "scanner": "Identity",
+      "id": "Input",
+      "position": "100",
+      "error": "false",
+      "numsubpods": "1"
+    },
+    {
+      "subpod": [
+        {
+          "img": [
+            {
+              "src": "http://www5a.wolframalpha.com/Calculate/MSP/MSP34931f3b63i344ch68eh000060b67533ff9fg5ee?MSPStoreType=image/gif&s=35",
+              "alt": "x =  ± sqrt(2)",
+              "title": "x =  ± sqrt(2)",
+              "width": "64",
+              "height": "20"
+            }
+          ],
+          "title": ""
+        }
+      ],
+      "states": [
+        {
+          "state": [
+            {
+              "name": "Approximate form",
+              "input": "Result__Approximate form"
+            },
+            {
+              "name": "Step-by-step solution",
+              "input": "Result__Step-by-step solution"
+            }
+          ],
+          "count": "2"
+        }
+      ],
+      "title": "Result",
+      "scanner": "Solve",
+      "id": "Result",
+      "position": "200",
+      "error": "false",
+      "numsubpods": "1",
+      "primary": "true"
+    }
+  ],
+  "success": "true",
+  "error": "false",
+  "numpods": "2",
+  "datatypes": "Solve",
+  "timedout": "",
+  "timedoutpods": "",
+  "timing": "0.716",
+  "parsetiming": "0.327",
+  "parsetimedout": "false",
+  "recalculate": "",
+  "id": "MSPa34901f3b63i344ch68eh000020gbdiaaeice84ba",
+  "host": "http://www5a.wolframalpha.com",
+  "server": "35",
+  "related": "http://www5a.wolframalpha.com/api/v2/relatedQueries.jsp?id=MSPa34911f3b63i344ch68eh00001ha655f554558aic5048793033274176174",
+  "version": "2.6"
+}

@@ -1,0 +1,152 @@
+{
+  "pod": [
+    {
+      "subpod": [
+        {
+          "img": [
+            {
+              "src": "http://www5a.wolframalpha.com/Calculate/MSP/MSP19201g55c8acd3f292f6000043a15ei27382c1ce?MSPStoreType=image/gif&s=32",
+              "alt": "is y(x)  =  x^2 an even function?",
+              "title": "is y(x)  =  x^2 an even function?",
+              "width": "198",
+              "height": "23"
+            }
+          ],
+          "title": ""
+        }
+      ],
+      "title": "Input interpretation",
+      "scanner": "Identity",
+      "id": "Input",
+      "position": "100",
+      "error": "false",
+      "numsubpods": "1"
+    },
+    {
+      "subpod": [
+        {
+          "img": [
+            {
+              "src": "http://www5a.wolframalpha.com/Calculate/MSP/MSP19211g55c8acd3f292f600002hdfd30a7a78efca?MSPStoreType=image/gif&s=32",
+              "alt": "y(x)  =  x^2 is an even function",
+              "title": "y(x)  =  x^2 is an even function",
+              "width": "191",
+              "height": "18"
+            }
+          ],
+          "title": ""
+        }
+      ],
+      "title": "Result",
+      "scanner": "NaturalMath",
+      "id": "Result",
+      "position": "200",
+      "error": "false",
+      "numsubpods": "1",
+      "primary": "true"
+    },
+    {
+      "subpod": [
+        {
+          "img": [
+            {
+              "src": "http://www5a.wolframalpha.com/Calculate/MSP/MSP19221g55c8acd3f292f6000069i342h14a2ch877?MSPStoreType=image/gif&s=32",
+              "alt": "y(-x)  =  (-x)^2 = x^2  =  y(x)",
+              "title": "y(-x)  =  (-x)^2 = x^2  =  y(x)",
+              "width": "176",
+              "height": "18"
+            }
+          ],
+          "title": ""
+        }
+      ],
+      "title": "Parity relation",
+      "scanner": "NaturalMath",
+      "id": "ParityRelation",
+      "position": "300",
+      "error": "false",
+      "numsubpods": "1",
+      "primary": "true"
+    },
+    {
+      "subpod": [
+        {
+          "img": [
+            {
+              "src": "http://www5a.wolframalpha.com/Calculate/MSP/MSP19231g55c8acd3f292f600005hbe0e11ea51h2bh?MSPStoreType=image/gif&s=32",
+              "alt": "R  (all real numbers)",
+              "title": "R  (all real numbers)",
+              "width": "138",
+              "height": "18"
+            }
+          ],
+          "title": "Domain"
+        },
+        {
+          "img": [
+            {
+              "src": "http://www5a.wolframalpha.com/Calculate/MSP/MSP19241g55c8acd3f292f60000401e629f0cd21i1h?MSPStoreType=image/gif&s=32",
+              "alt": "{y element R : y>=0}  (all non-negative real numbers)",
+              "title": "{y element R : y>=0}  (all non-negative real numbers)",
+              "width": "312",
+              "height": "18"
+            }
+          ],
+          "title": "Range"
+        }
+      ],
+      "infos": [
+        {
+          "info": [
+            {
+              "img": [
+                {
+                  "src": "http://www5a.wolframalpha.com/Calculate/MSP/MSP19251g55c8acd3f292f6000066293g45dc2a6429?MSPStoreType=image/gif&s=32",
+                  "alt": " is the set of real numbers",
+                  "title": " is the set of real numbers",
+                  "width": "181",
+                  "height": "18"
+                }
+              ],
+              "link": [
+                {
+                  "url": "http://reference.wolfram.com/language/ref/Reals.html",
+                  "text": "Documentation",
+                  "title": "Documentation"
+                },
+                {
+                  "url": "http://mathworld.wolfram.com/R.html",
+                  "text": "Definition",
+                  "title": "MathWorld"
+                }
+              ],
+              "text": " is the set of real numbers"
+            }
+          ],
+          "count": "1"
+        }
+      ],
+      "title": "Properties as a real function",
+      "scanner": "NaturalMath",
+      "id": "PropertiesAsARealFunction",
+      "position": "400",
+      "error": "false",
+      "numsubpods": "2"
+    }
+  ],
+  "success": "true",
+  "error": "false",
+  "numpods": "4",
+  "datatypes": "FunctionTypeQ",
+  "timedout": "",
+  "timedoutpods": "",
+  "timing": "1.272",
+  "parsetiming": "0.41600000000000004",
+  "parsetimedout": "false",
+  "recalculate": "",
+  "id": "MSPa19181g55c8acd3f292f600005e12gfg8762ef917",
+  "host": "http://www5a.wolframalpha.com",
+  "server": "32",
+  "related": "http://www5a.wolframalpha.com/api/v2/relatedQueries.jsp?id=MSPa19191g55c8acd3f292f600005gc4823f4230d9hh5078011455282822963",
+  "version": "2.6"
+}

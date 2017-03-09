@@ -1,0 +1,408 @@
+{
+  "pod": [
+    {
+      "subpod": [
+        {
+          "img": [
+            {
+              "src": "http://www5a.wolframalpha.com/Calculate/MSP/MSP41271iae215gdf99i0h800006321ibd9c7bhhca7?MSPStoreType=image/gif&s=41",
+              "alt": "(10 x^2 + sin^2(x) - 11 x^2) + 5 x",
+              "title": "(10 x^2 + sin^2(x) - 11 x^2) + 5 x",
+              "width": "188",
+              "height": "22"
+            }
+          ],
+          "title": ""
+        }
+      ],
+      "title": "Input",
+      "scanner": "Identity",
+      "id": "Input",
+      "position": "100",
+      "error": "false",
+      "numsubpods": "1"
+    },
+    {
+      "subpod": [
+        {
+          "img": [
+            {
+              "src": "http://www5a.wolframalpha.com/Calculate/MSP/MSP41281iae215gdf99i0h800003bibhi6i8eb88cfi?MSPStoreType=image/gif&s=41",
+              "alt": "-x^2 + 5 x + sin^2(x)",
+              "title": "-x^2 + 5 x + sin^2(x)",
+              "width": "121",
+              "height": "18"
+            }
+          ],
+          "title": "",
+          "primary": "true"
+        }
+      ],
+      "title": "Result",
+      "scanner": "Identity",
+      "id": "Result",
+      "position": "200",
+      "error": "false",
+      "numsubpods": "1",
+      "primary": "true"
+    },
+    {
+      "subpod": [
+        {
+          "img": [
+            {
+              "src": "http://www5a.wolframalpha.com/Calculate/MSP/MSP41291iae215gdf99i0h800001e989058f4i46egi?MSPStoreType=image/gif&s=41",
+              "alt": "sin^2(x) - (x - 5) x",
+              "title": "sin^2(x) - (x - 5) x",
+              "width": "113",
+              "height": "18"
+            }
+          ],
+          "title": ""
+        },
+        {
+          "img": [
+            {
+              "src": "http://www5a.wolframalpha.com/Calculate/MSP/MSP41301iae215gdf99i0h8000016fghc1i84bhee9c?MSPStoreType=image/gif&s=41",
+              "alt": "1/2 (-2 x^2 + 10 x - cos(2 x) + 1)",
+              "title": "1/2 (-2 x^2 + 10 x - cos(2 x) + 1)",
+              "width": "195",
+              "height": "36"
+            }
+          ],
+          "title": ""
+        },
+        {
+          "img": [
+            {
+              "src": "http://www5a.wolframalpha.com/Calculate/MSP/MSP41311iae215gdf99i0h8000060h601if1g0hd1ih?MSPStoreType=image/gif&s=41",
+              "alt": "-x^2 + 5 x + (sin^2(x))/2 - (cos^2(x))/2 + 1/2",
+              "title": "-x^2 + 5 x + (sin^2(x))/2 - (cos^2(x))/2 + 1/2",
+              "width": "221",
+              "height": "39"
+            }
+          ],
+          "title": ""
+        }
+      ],
+      "states": [
+        {
+          "state": [
+            {
+              "name": "More",
+              "input": "AlternateForm__More"
+            }
+          ],
+          "count": "1"
+        }
+      ],
+      "title": "Alternate forms",
+      "scanner": "Simplification",
+      "id": "AlternateForm",
+      "position": "300",
+      "error": "false",
+      "numsubpods": "3"
+    },
+    {
+      "subpod": [
+        {
+          "img": [
+            {
+              "src": "http://www5a.wolframalpha.com/Calculate/MSP/MSP41321iae215gdf99i0h800003472hdag24gi21ei?MSPStoreType=image/gif&s=41",
+              "alt": "x~~0.",
+              "title": "x~~0.",
+              "width": "550",
+              "height": "22"
+            }
+          ],
+          "title": ""
+        },
+        {
+          "img": [
+            {
+              "src": "http://www5a.wolframalpha.com/Calculate/MSP/MSP41331iae215gdf99i0h8000045g64i2gd034hg7e?MSPStoreType=image/gif&s=41",
+              "alt": "x~~5.15788",
+              "title": "x~~5.15788",
+              "width": "550",
+              "height": "22"
+            }
+          ],
+          "title": ""
+        }
+      ],
+      "states": [
+        {
+          "state": [
+            {
+              "name": "Exact forms",
+              "input": "Solution__Exact forms"
+            },
+            {
+              "name": "More digits",
+              "input": "Solution__More digits"
+            }
+          ],
+          "count": "2"
+        }
+      ],
+      "title": "Roots",
+      "scanner": "Reduce",
+      "id": "Solution",
+      "position": "400",
+      "error": "false",
+      "numsubpods": "2",
+      "primary": "true"
+    },
+    {
+      "subpod": [
+        {
+          "img": [
+            {
+              "src": "http://www5a.wolframalpha.com/Calculate/MSP/MSP41341iae215gdf99i0h800000h47b02h275haeie?MSPStoreType=image/gif&s=41",
+              "alt": "x = 0",
+              "title": "x = 0",
+              "width": "550",
+              "height": "22"
+            }
+          ],
+          "title": ""
+        }
+      ],
+      "title": "Integer root",
+      "scanner": "Reduce",
+      "id": "IntegerSolution",
+      "position": "500",
+      "error": "false",
+      "numsubpods": "1",
+      "primary": "true"
+    },
+    {
+      "subpod": [
+        {
+          "img": [
+            {
+              "src": "http://www5a.wolframalpha.com/Calculate/MSP/MSP41351iae215gdf99i0h800005307gd259b6b40h4?MSPStoreType=image/gif&s=41",
+              "alt": "R  (all real numbers)",
+              "title": "R  (all real numbers)",
+              "width": "138",
+              "height": "18"
+            }
+          ],
+          "title": "Domain"
+        },
+        {
+          "img": [
+            {
+              "src": "http://www5a.wolframalpha.com/Calculate/MSP/MSP41361iae215gdf99i0h800001a712dc65db7fi8e?MSPStoreType=image/gif&s=41",
+              "alt": "{y element R : y + 4.31107<=11.147}",
+              "title": "{y element R : y + 4.31107<=11.147}",
+              "width": "199",
+              "height": "18"
+            }
+          ],
+          "title": "Range"
+        }
+      ],
+      "states": [
+        {
+          "state": [
+            {
+              "name": "Exact forms",
+              "input": "PropertiesAsARealFunction__Exact forms"
+            }
+          ],
+          "count": "1"
+        }
+      ],
+      "infos": [
+        {
+          "info": [
+            {
+              "img": [
+                {
+                  "src": "http://www5a.wolframalpha.com/Calculate/MSP/MSP41371iae215gdf99i0h800003hg06f4b48c4g96b?MSPStoreType=image/gif&s=41",
+                  "alt": " is the set of real numbers",
+                  "title": " is the set of real numbers",
+                  "width": "181",
+                  "height": "18"
+                }
+              ],
+              "link": [
+                {
+                  "url": "http://reference.wolfram.com/language/ref/Reals.html",
+                  "text": "Documentation",
+                  "title": "Documentation"
+                },
+                {
+                  "url": "http://mathworld.wolfram.com/R.html",
+                  "text": "Definition",
+                  "title": "MathWorld"
+                }
+              ],
+              "text": " is the set of real numbers"
+            }
+          ],
+          "count": "1"
+        }
+      ],
+      "title": "Properties as a real function",
+      "scanner": "FunctionProperties",
+      "id": "PropertiesAsARealFunction",
+      "position": "600",
+      "error": "false",
+      "numsubpods": "2"
+    },
+    {
+      "subpod": [
+        {
+          "img": [
+            {
+              "src": "http://www5a.wolframalpha.com/Calculate/MSP/MSP41381iae215gdf99i0h8000036hcie5af7315e7a?MSPStoreType=image/gif&s=41",
+              "alt": "5 x - x^4/3 + (2 x^6)/45 - x^8/315 + O(x^9)\n(Taylor series)",
+              "title": "5 x - x^4/3 + (2 x^6)/45 - x^8/315 + O(x^9)\n(Taylor series)",
+              "width": "197",
+              "height": "60"
+            }
+          ],
+          "title": ""
+        }
+      ],
+      "infos": [
+        {
+          "info": [
+            {
+              "link": [
+                {
+                  "url": "http://mathworld.wolfram.com/Big-ONotation.html",
+                  "text": "Big‐O notation"
+                }
+              ]
+            }
+          ],
+          "count": "1"
+        }
+      ],
+      "title": "Series expansion at x=0",
+      "scanner": "Series",
+      "id": "SeriesExpansionAt `1`x=0.",
+      "position": "700",
+      "error": "false",
+      "numsubpods": "1"
+    },
+    {
+      "subpod": [
+        {
+          "img": [
+            {
+              "src": "http://www5a.wolframalpha.com/Calculate/MSP/MSP41391iae215gdf99i0h800003738edhca165if6b?MSPStoreType=image/gif&s=41",
+              "alt": "d/dx((10 x^2 + sin^2(x) - 11 x^2) + 5 x) = -2 x + sin(2 x) + 5",
+              "title": "d/dx((10 x^2 + sin^2(x) - 11 x^2) + 5 x) = -2 x + sin(2 x) + 5",
+              "width": "358",
+              "height": "36"
+            }
+          ],
+          "title": ""
+        }
+      ],
+      "states": [
+        {
+          "state": [
+            {
+              "name": "Step-by-step solution",
+              "input": "Derivative__Step-by-step solution"
+            }
+          ],
+          "count": "1"
+        }
+      ],
+      "title": "Derivative",
+      "scanner": "Derivative",
+      "id": "Derivative",
+      "position": "800",
+      "error": "false",
+      "numsubpods": "1"
+    },
+    {
+      "subpod": [
+        {
+          "img": [
+            {
+              "src": "http://www5a.wolframalpha.com/Calculate/MSP/MSP41401iae215gdf99i0h8000017i10cacc38dh71b?MSPStoreType=image/gif&s=41",
+              "alt": " integral (5 x - x^2 + sin^2(x)) dx = 1/6 (x (-2 x^2 + 15 x + 3) - 3 sin(x) cos(x)) + constant",
+              "title": " integral (5 x - x^2 + sin^2(x)) dx = 1/6 (x (-2 x^2 + 15 x + 3) - 3 sin(x) cos(x)) + constant",
+              "width": "505",
+              "height": "36"
+            }
+          ],
+          "title": ""
+        }
+      ],
+      "states": [
+        {
+          "state": [
+            {
+              "name": "Step-by-step solution",
+              "input": "IndefiniteIntegral__Step-by-step solution"
+            }
+          ],
+          "count": "1"
+        }
+      ],
+      "title": "Indefinite integral",
+      "scanner": "Integral",
+      "id": "IndefiniteIntegral",
+      "position": "900",
+      "error": "false",
+      "numsubpods": "1",
+      "primary": "true"
+    },
+    {
+      "subpod": [
+        {
+          "img": [
+            {
+              "src": "http://www5a.wolframalpha.com/Calculate/MSP/MSP41411iae215gdf99i0h8000026g9328ii3c445i0?MSPStoreType=image/gif&s=41",
+              "alt": "max{(10 x^2 + sin^2(x) - 11 x^2) + 5 x}~~6.83598 at x~~2.07631",
+              "title": "max{(10 x^2 + sin^2(x) - 11 x^2) + 5 x}~~6.83598 at x~~2.07631",
+              "width": "400",
+              "height": "22"
+            }
+          ],
+          "title": ""
+        }
+      ],
+      "states": [
+        {
+          "state": [
+            {
+              "name": "More digits",
+              "input": "LocalMaximum__More digits"
+            }
+          ],
+          "count": "1"
+        }
+      ],
+      "title": "Local maximum",
+      "scanner": "GlobalExtrema",
+      "id": "LocalMaximum",
+      "position": "1000",
+      "error": "false",
+      "numsubpods": "1"
+    }
+  ],
+  "success": "true",
+  "error": "false",
+  "numpods": "10",
+  "datatypes": "Math",
+  "timedout": "GlobalExtrema,InterestingDefiniteIntegrals,InterestingMultiDimensionalDefiniteIntegrals,MathematicalFunctionData",
+  "timedoutpods": "",
+  "timing": "5.414",
+  "parsetiming": "1.054",
+  "parsetimedout": "false",
+  "recalculate": "http://www5a.wolframalpha.com/api/v2/recalc.jsp?id=MSPa41241iae215gdf99i0h8000038ca751126a6468i2767474630695920557",
+  "id": "MSPa41251iae215gdf99i0h800001gh53eg1ab7c2e08",
+  "host": "http://www5a.wolframalpha.com",
+  "server": "41",
+  "related": "http://www5a.wolframalpha.com/api/v2/relatedQueries.jsp?id=MSPa41261iae215gdf99i0h800001e6ib27a91b67f952767474630695920557",
+  "version": "2.6"
+}

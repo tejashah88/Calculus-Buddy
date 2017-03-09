@@ -7,6 +7,17 @@ var queryString = 'indefinite integral of open paren ten x squared plus sin x sq
 var queryString2 = 'first derivative of open paren ten x squared plus sin x squared close paren plus five x';
 var queryString3 = 'open paren ten x squared plus sin x squared minus eleven x squared close paren plus five x';
 var queryString4 = 'if x = 2y + 3 and y = 5 x - 2 solve';
+var queryString5 = 'roots of x ^ 2 - 2';
+var queryString6 = 'is x^2 an even function';
+
+var qsArray = [
+  {qs: queryString, file: 'test.txt'},
+  {qs: queryString2, file: 'test2.txt'},
+  {qs: queryString3, file: 'test3.txt'},
+  {qs: queryString4, file: 'test4.txt'},
+  {qs: queryString5, file: 'test5.txt'},
+  {qs: queryString6, file: 'test6.txt'}
+];
 
 /*var simplifierMap = [
   {
@@ -60,86 +71,104 @@ var englishify = function(text) {
 }
 
 // use the client to send a query
-waClient.query(queryString, {
-  //format: 'plaintext,image' //doing only 'plaintext' gives some janky characters
-})
-.then(function(qr) {
-  console.log(JSON.stringify(JSON.parse(qr.toJson()), null, 2));
-  /*for (var pod of qr.pods()) {
-    //console.log(pod);
-    var title = pod.getTitle();
+
+var process = function(qstring) {
+  waClient.query(qstring.qs, {
+    excludePodId: [
+      'Plot', 'PlotOfSolutionSet', 'PlotOfSolutionSet', 'RootPlot',
+      'NumberLine'
+    ],
+    //podState: 'Result__Step-by-step solution'
+    format: 'image' //doing only 'plaintext' gives some janky characters
+  })
+  .then(function(qr) {
+    console.log('Writing to ' + qstring.file);
+    fs.writeFileSync(qstring.file, JSON.stringify(JSON.parse(qr.toJson()), null, 2));
+    for (var pod of qr.pods()) {
+      console.log(pod.id);
+    };
+    {
+      /*for (var pod of qr.pods()) {
+        //console.log(pod);
+        var title = pod.getTitle();
+        
+        if (title.toLowerCase().includes("plot"))
+          continue;
+        console.log(title)
     
-    if (title.toLowerCase().includes("plot"))
-      continue;
-    console.log(title)
-
-    for (var subpod of pod.subPods()) {
-      //console.log(JSON.stringify(subpod.getPlainText(), null, 2))
-      console.log(subpod);
-      var subTitle = subpod.getTitle();
-
-      console.log((subTitle ? subTitle + " equals " : "") + " => " + englishify(subpod.getPlainText()[0]).replace(/\uF74Cx\uF7D9/g, "test"));
-    }//\uF74E \uF74D
-  }*/
-  /*var pods = JSON.parse(qr.toJson());
-  console.log(qr.toJson());
-  console.log(qr.error());
-
-  var resultObj = {};
-
-  for (var i = 0; i < pods.pod.length; i++) {
-    var pod = pods.pod[i];
-    var podTitle = pod.title;
-
-    if (podTitle === "Plots") {
-      continue;
-    }
-
-    var subPodTexts = [];
-
-    for (var j = 0; j < pod.subpod.length; j++) {
-      var subPodTitle = pod.subpod[j].title.trim();
-      var subPodText = pod.subpod[j].plaintext[0].trim();
-
-      subPodTexts.push((subPodTitle ? subPodTitle + " equals " : "") + englishify(subPodText));
-    }
-
-    if (subPodTexts.length) {
-      resultObj[podTitle] = subPodTexts;
-    }
-  }
-
-  console.log(JSON.stringify(resultObj, null, 2));
-  var keys = Object.keys(resultObj);
-  var response = "Here are some answers and information: ";
-  
-  for (var i = 0; i < keys.length; i++) {
-    var key = keys[i];
-    var values = resultObj[key];
-    response += "The " + key + ((values.length > 2) ? " are " : " is ");
-
-    for (var j = 0; j < values.length; j++) {
-      var value = values[j];
-      response += value;
-
-      if ((j + 1) < values.length) {
-        response += ", and ";
-      } else {
-        if ((i + 1) < keys.length) {
-          response += ". ";
+        for (var subpod of pod.subPods()) {
+          //console.log(JSON.stringify(subpod.getPlainText(), null, 2))
+          console.log(subpod);
+          var subTitle = subpod.getTitle();
+    
+          console.log((subTitle ? subTitle + " equals " : "") + " => " + englishify(subpod.getPlainText()[0]).replace(/\uF74Cx\uF7D9/g, "test"));
+        }//\uF74E \uF74D
+      }*/
+      /*var pods = JSON.parse(qr.toJson());
+      console.log(qr.toJson());
+      console.log(qr.error());
+    
+      var resultObj = {};
+    
+      for (var i = 0; i < pods.pod.length; i++) {
+        var pod = pods.pod[i];
+        var podTitle = pod.title;
+    
+        if (podTitle === "Plots") {
+          continue;
+        }
+    
+        var subPodTexts = [];
+    
+        for (var j = 0; j < pod.subpod.length; j++) {
+          var subPodTitle = pod.subpod[j].title.trim();
+          var subPodText = pod.subpod[j].plaintext[0].trim();
+    
+          subPodTexts.push((subPodTitle ? subPodTitle + " equals " : "") + englishify(subPodText));
+        }
+    
+        if (subPodTexts.length) {
+          resultObj[podTitle] = subPodTexts;
         }
       }
+    
+      console.log(JSON.stringify(resultObj, null, 2));
+      var keys = Object.keys(resultObj);
+      var response = "Here are some answers and information: ";
+      
+      for (var i = 0; i < keys.length; i++) {
+        var key = keys[i];
+        var values = resultObj[key];
+        response += "The " + key + ((values.length > 2) ? " are " : " is ");
+    
+        for (var j = 0; j < values.length; j++) {
+          var value = values[j];
+          response += value;
+    
+          if ((j + 1) < values.length) {
+            response += ", and ";
+          } else {
+            if ((i + 1) < keys.length) {
+              response += ". ";
+            }
+          }
+        }
+      }
+    
+      response += ".";
+      console.log(response);*/
+      //console.log(queryString2);
+      //console.log(unenglishify(queryString2));
     }
-  }
+  })
+  .catch(function(err) {
+    console.log(err);
+  });
+}
 
-  response += ".";
-  console.log(response);*/
-  //console.log(queryString2);
-  //console.log(unenglishify(queryString2));
-})
-.catch(function(err) {
-  console.log(err);
-})
+for (var qstring of qsArray) {
+  process(qstring);
+}
 
 /*var alexa = require('alexa-utils');
 const PORT = process.env.PORT || 8080;
