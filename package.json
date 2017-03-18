@@ -18,8 +18,8 @@
   "homepage": "https://github.com/tejashah88/Calculus-Buddy#readme",
   "dependencies": {
     "alexa-app": "^3.2.0",
-    "express": "^4.15.0",
-    "firebase": "^3.7.1",
+    "express": "^4.15.2",
+    "firebase": "^3.7.2",
     "wajs": "0.0.16"
   }
 }

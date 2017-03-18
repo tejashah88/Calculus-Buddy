@@ -5,11 +5,11 @@
         {
           "img": [
             {
-              "src": "http://www5a.wolframalpha.com/Calculate/MSP/MSP2681g55ca7ci8fgg61g00005gi1511ga2eh973a?MSPStoreType=image/gif&s=32",
-              "alt": "solve x = 2 y + 3\ny = 5 x - 2",
-              "title": "solve x = 2 y + 3\ny = 5 x - 2",
-              "width": "163",
-              "height": "61"
+              "src": "http://www3.wolframalpha.com/Calculate/MSP/MSP1982266cdha3a715igg00005dhgd4h05903e4id?MSPStoreType=image/gif&s=8",
+              "alt": "roots x^2 - 2 = 0",
+              "title": "roots x^2 - 2 = 0",
+              "width": "158",
+              "height": "35"
             }
           ],
           "title": ""
@@ -27,11 +27,11 @@
         {
           "img": [
             {
-              "src": "http://www5a.wolframalpha.com/Calculate/MSP/MSP2691g55ca7ci8fgg61g000020467ff51b30a4gf?MSPStoreType=image/gif&s=32",
-              "alt": "x = 1/9 and y = -13/9",
-              "title": "x = 1/9 and y = -13/9",
-              "width": "140",
-              "height": "37"
+              "src": "http://www3.wolframalpha.com/Calculate/MSP/MSP1992266cdha3a715igg00000dhe84cicg53601a?MSPStoreType=image/gif&s=8",
+              "alt": "x =  ± sqrt(2)",
+              "title": "x =  ± sqrt(2)",
+              "width": "64",
+              "height": "20"
             }
           ],
           "title": ""
@@ -67,13 +67,13 @@
   "datatypes": "Solve",
   "timedout": "",
   "timedoutpods": "",
-  "timing": "1.168",
-  "parsetiming": "0.706",
+  "timing": "0.781",
+  "parsetiming": "0.353",
   "parsetimedout": "false",
-  "recalculate": "",
-  "id": "MSPa2661g55ca7ci8fgg61g0000557e76h7g935a96i",
-  "host": "http://www5a.wolframalpha.com",
-  "server": "32",
-  "related": "http://www5a.wolframalpha.com/api/v2/relatedQueries.jsp?id=MSPa2671g55ca7ci8fgg61g000027e231i8baeg4if35078011455282822963",
+  "recalculate": "http://www3.wolframalpha.com/api/v2/recalc.jsp?id=MSPa1952266cdha3a715igg000017c6g6917356103h&s=8",
+  "id": "MSPa1962266cdha3a715igg000037768fd08ea376hh",
+  "host": "http://www3.wolframalpha.com",
+  "server": "8",
+  "related": "http://www3.wolframalpha.com/api/v2/relatedQueries.jsp?id=MSPa1972266cdha3a715igg00005508eid5e9g7h067&s=8",
   "version": "2.6"
 }

@@ -1,29 +1,67 @@
 var wajs = require('wajs');
 var waClient = new wajs(/*process.env.wa_key*/"2GGY3Y-X44843666P");
 var fs = require('fs');
+var firebase = require('firebase');
 //J6HA6V-YHRLHJ8A8Q
 
-var queryString = 'indefinite integral of open paren ten x squared plus sin x squared close paren plus five x';
+var queryString1 = 'indefinite integral of open paren ten x squared plus sin x squared close paren plus five x';
 var queryString2 = 'first derivative of open paren ten x squared plus sin x squared close paren plus five x';
 var queryString3 = 'open paren ten x squared plus sin x squared minus eleven x squared close paren plus five x';
 var queryString4 = 'if x = 2y + 3 and y = 5 x - 2 solve';
 var queryString5 = 'roots of x ^ 2 - 2';
 var queryString6 = 'is x^2 an even function';
+var queryString7 = 'equation sine theta equals one divided by square root of two, solve for theta';
 
 var qsArray = [
-  {qs: queryString, file: 'test.txt'},
-  {qs: queryString2, file: 'test2.txt'},
-  {qs: queryString3, file: 'test3.txt'},
-  {qs: queryString4, file: 'test4.txt'},
-  {qs: queryString5, file: 'test5.txt'},
-  {qs: queryString6, file: 'test6.txt'}
+  {qs: queryString1, file: 'test/test1.txt'},
+  {qs: queryString2, file: 'test/test2.txt'},
+  {qs: queryString3, file: 'test/test3.txt'},
+  {qs: queryString4, file: 'test/test4.txt'},
+  {qs: queryString5, file: 'test/test5.txt'},
+  {qs: queryString6, file: 'test/test6.txt'},
+  {qs: queryString7, file: 'test/test7.txt'}
 ];
 
-/*var simplifierMap = [
-  {
-    original: ""
-  }
-];*/
+var POD_STATES = {
+  STEP_BY_STEP_SOLUTION: 'Result__Step-by-step solution',
+  APPROX_FORM: 'Result__Approximate form'
+};
+
+var unenglishRuleMap = [
+  {orig: "open paren ", new: "("},
+  {orig: " close paren", new: ")"},
+  {orig: " squared", new: "^2"},
+  {orig: " cubed", new: "^3"},
+  {orig: " plus ", new: "+"},
+  {orig: " minus ", new: "-"},
+  {orig: " times ", new: "*"},
+  {orig: " divided ", new: "/"},
+  {orig: " equals ", new: "="},
+  {orig: "zero", new: "0"},
+  {orig: "one", new: "1"},
+  {orig: "two", new: "2"},
+  {orig: "three", new: "3"},
+  {orig: "four", new: "4"},
+  {orig: "five", new: "5"},
+  {orig: "six", new: "6"},
+  {orig: "seven", new: "7"},
+  {orig: "eight", new: "8"},
+  {orig: "nine", new: "9"},
+  {orig: "ten", new: "10"},
+  {orig: "eleven", new: "11"},
+  {orig: "twelve", new: "12"},
+  {orig: "thirteen", new: "13"},
+  {orig: "fourteen", new: "14"},
+  {orig: "fifteen", new: "15"},
+  {orig: "sixteen", new: "16"},
+  {orig: "seventeen", new: "17"},
+  {orig: "eighteen", new: "18"},
+  {orig: "nineteen", new: "19"}
+];
+
+var englishRuleMap = [
+
+];
 
 String.prototype.replaceAll = function(search, replacement) {
   var target = this;
@@ -31,7 +69,12 @@ String.prototype.replaceAll = function(search, replacement) {
 };
 
 var unenglishify = function(text) {
-  return text
+  for (var ueRule of unenglishRuleMap) {
+    text = text.replaceAll(ueRule.orig, ueRule.new);
+  }
+
+  return text;
+  /*return text
           .replaceAll("open paren ", "(")
           .replaceAll(" close paren", ")")
           .replaceAll(" squared", "^2")
@@ -60,7 +103,7 @@ var unenglishify = function(text) {
           .replaceAll("sixteen", "16")
           .replaceAll("seventeen", "17")
           .replaceAll("eighteen", "18")
-          .replaceAll("nineteen", "19");
+          .replaceAll("nineteen", "19");*/
 }
 
 var englishify = function(text) {
@@ -74,12 +117,10 @@ var englishify = function(text) {
 
 var process = function(qstring) {
   waClient.query(qstring.qs, {
-    excludePodId: [
-      'Plot', 'PlotOfSolutionSet', 'PlotOfSolutionSet', 'RootPlot',
-      'NumberLine'
-    ],
+    excludePodId: ['Plot', 'PlotOfSolutionSet', 'PlotOfSolutionSet', 'RootPlot', 'NumberLine'],
+    includePodId: ['Input', 'Result'],
     //podState: 'Result__Step-by-step solution'
-    format: 'image' //doing only 'plaintext' gives some janky characters
+    format: 'image' //doing 'plaintext' gives some janky characters
   })
   .then(function(qr) {
     console.log('Writing to ' + qstring.file);
@@ -303,5 +344,54 @@ alexaApp.post = function(request, response, type, exception) {
     console.log("An error occured: " + exception);
   }
 };
+
+app.listen(PORT, () => console.log("Listening on port " + PORT + "."));*/
+
+
+/*var express = require("express");
+var alexa = require("alexa-app");
+
+var PORT = process.env.PORT || 8080;
+var app = express();
+
+// ALWAYS setup the alexa app and attach it to express before anything else.
+var alexaApp = new alexa.app("calculus-buddy");
+
+alexaApp.express({
+  expressApp: app,
+
+  // verifies requests come from amazon alexa. Must be enabled for production.
+  // You can disable this if you're running a dev environment and want to POST
+  // things to test behavior. enabled by default.
+  checkCert: false,
+
+  // sets up a GET route when set to true. This is handy for testing in
+  // development, but not recommended for production. disabled by default
+  debug: true
+});
+
+// now POST calls to /test in express will be handled by the app.request() function
+
+// from here on you can setup any other express routes or middlewares as normal
+app.set("view engine", "ejs");
+
+alexaApp.launch(function(request, response) {
+  response.say("You launched the app!");
+});
+
+alexaApp.dictionary = { "names": ["matt", "joe", "bob", "bill", "mary", "jane", "dawn"] };
+
+alexaApp.intent("nameIntent", {
+    "slots": { "NAME": "LITERAL" },
+    "utterances": [
+      "my {name is|name's} {names|NAME}", "set my name to {names|NAME}"
+    ]
+  },
+  function(request, response) {
+    response.say("Success!");
+  }
+);
+
+//
 
 app.listen(PORT, () => console.log("Listening on port " + PORT + "."));*/
