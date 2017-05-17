@@ -5,7 +5,7 @@
         {
           "img": [
             {
-              "src": "http://www3.wolframalpha.com/Calculate/MSP/MSP23422ah523h9e70a2d700003h85ca39734ac1da?MSPStoreType=image/gif&s=11",
+              "src": "http://www3.wolframalpha.com/Calculate/MSP/MSP10721i98fi237fe63igg000047ec011517ch21a9?MSPStoreType=image/gif&s=14",
               "alt": "is y(x)  =  x^2 an even function?",
               "title": "is y(x)  =  x^2 an even function?",
               "width": "198",
@@ -27,7 +27,7 @@
         {
           "img": [
             {
-              "src": "http://www3.wolframalpha.com/Calculate/MSP/MSP23522ah523h9e70a2d700003ga6646fifg90278?MSPStoreType=image/gif&s=11",
+              "src": "http://www3.wolframalpha.com/Calculate/MSP/MSP10731i98fi237fe63igg000030d467cei15ag281?MSPStoreType=image/gif&s=14",
               "alt": "y(x)  =  x^2 is an even function",
               "title": "y(x)  =  x^2 is an even function",
               "width": "191",
@@ -52,13 +52,13 @@
   "datatypes": "FunctionTypeQ",
   "timedout": "",
   "timedoutpods": "",
-  "timing": "0.9510000000000001",
-  "parsetiming": "0.418",
+  "timing": "0.856",
+  "parsetiming": "0.397",
   "parsetimedout": "false",
-  "recalculate": "http://www3.wolframalpha.com/api/v2/recalc.jsp?id=MSPa23122ah523h9e70a2d700003c423ha82872h0c0&s=11",
-  "id": "MSPa23222ah523h9e70a2d70000633f9eg0e27g31i7",
+  "recalculate": "",
+  "id": "MSPa10701i98fi237fe63igg00003561edf5ffc8ba26",
   "host": "http://www3.wolframalpha.com",
-  "server": "11",
-  "related": "http://www3.wolframalpha.com/api/v2/relatedQueries.jsp?id=MSPa23322ah523h9e70a2d700005d32f19ac4781e46&s=11",
+  "server": "14",
+  "related": "http://www3.wolframalpha.com/api/v2/relatedQueries.jsp?id=MSPa10711i98fi237fe63igg0000648i7f9852c3c19e&s=14",
   "version": "2.6"
 }

@@ -5,7 +5,7 @@
         {
           "img": [
             {
-              "src": "http://www3.wolframalpha.com/Calculate/MSP/MSP2371eh3500a9fi1e299000045fh78aa8def3g18?MSPStoreType=image/gif&s=9",
+              "src": "http://www3.wolframalpha.com/Calculate/MSP/MSP4571e90hhdb275cgf0i000041c669g0ahbgh6a7?MSPStoreType=image/gif&s=13",
               "alt": "d/dx((10 x^2 + sin^2(x)) + 5 x) = 20 x + sin(2 x) + 5",
               "title": "d/dx((10 x^2 + sin^2(x)) + 5 x) = 20 x + sin(2 x) + 5",
               "width": "305",
@@ -41,13 +41,13 @@
   "datatypes": "D",
   "timedout": "",
   "timedoutpods": "",
-  "timing": "1.795",
-  "parsetiming": "0.937",
+  "timing": "1.562",
+  "parsetiming": "0.9390000000000001",
   "parsetimedout": "false",
-  "recalculate": "http://www3.wolframalpha.com/api/v2/recalc.jsp?id=MSPa2341eh3500a9fi1e29900001c64g4e5g5253hbg&s=9",
-  "id": "MSPa2351eh3500a9fi1e299000060ga04e32d44aggf",
+  "recalculate": "",
+  "id": "MSPa4551e90hhdb275cgf0i000025b6db5ig171h525",
   "host": "http://www3.wolframalpha.com",
-  "server": "9",
-  "related": "http://www3.wolframalpha.com/api/v2/relatedQueries.jsp?id=MSPa2361eh3500a9fi1e299000039606cic51h4h207&s=9",
+  "server": "13",
+  "related": "http://www3.wolframalpha.com/api/v2/relatedQueries.jsp?id=MSPa4561e90hhdb275cgf0i00005gca49704e1i5bb6&s=13",
   "version": "2.6"
 }

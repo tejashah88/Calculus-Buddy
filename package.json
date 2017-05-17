@@ -17,9 +17,9 @@
   },
   "homepage": "https://github.com/tejashah88/Calculus-Buddy#readme",
   "dependencies": {
-    "alexa-app": "^3.2.0",
+    "alexa-app": "^4.0.0",
     "express": "^4.15.2",
-    "firebase": "^3.7.2",
+    "firebase": "^3.7.3",
     "wajs": "0.0.16"
   }
 }

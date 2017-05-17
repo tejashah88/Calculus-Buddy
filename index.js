@@ -1,5 +1,5 @@
 var wajs = require('wajs');
-var waClient = new wajs(/*process.env.wa_key*/"2GGY3Y-X44843666P");
+var waClient = new wajs(/*process.env.wa_key*//*"2GGY3Y-8G6G92XVW6"*/"2GGY3Y-8G6G92XVW6");
 var fs = require('fs');
 var firebase = require('firebase');
 //J6HA6V-YHRLHJ8A8Q
@@ -60,7 +60,9 @@ var unenglishRuleMap = [
 ];
 
 var englishRuleMap = [
-
+  {orig: /~~/g, new: " approximately equals "},
+  {orig: /  /g, new: " "},
+  {orig: /_\((.+)\)\^/g, new: " from $1 to "}
 ];
 
 String.prototype.replaceAll = function(search, replacement) {
@@ -74,48 +76,17 @@ var unenglishify = function(text) {
   }
 
   return text;
-  /*return text
-          .replaceAll("open paren ", "(")
-          .replaceAll(" close paren", ")")
-          .replaceAll(" squared", "^2")
-          .replaceAll(" cubed", "^3")
-          .replaceAll(" plus ", "+")
-          .replaceAll(" minus ", "-")
-          .replaceAll(" times ", "*")
-          .replaceAll(" divided ", "/")
-          .replaceAll(" equals ", "=")
-          .replaceAll("zero", "0")
-          .replaceAll("one", "1")
-          .replaceAll("two", "2")
-          .replaceAll("three", "3")
-          .replaceAll("four", "4")
-          .replaceAll("five", "5")
-          .replaceAll("six", "6")
-          .replaceAll("seven", "7")
-          .replaceAll("eight", "8")
-          .replaceAll("nine", "9")
-          .replaceAll("ten", "10")
-          .replaceAll("eleven", "11")
-          .replaceAll("twelve", "12")
-          .replaceAll("thirteen", "13")
-          .replaceAll("fourteen", "14")
-          .replaceAll("fifteen", "15")
-          .replaceAll("sixteen", "16")
-          .replaceAll("seventeen", "17")
-          .replaceAll("eighteen", "18")
-          .replaceAll("nineteen", "19");*/
 }
 
 var englishify = function(text) {
-  return  text.replaceAll("~~", " approximately equals ")
-              //.replaceAll("\n", " ")
-              .replaceAll("  ", " ")
-              .replace(/_\((.+)\)\^/g, " from $1 to ");
+  return text.replaceAll("~~", " approximately equals ")
+             .replaceAll("  ", " ")
+             .replace(/_\((.+)\)\^/g, " from $1 to ");
 }
 
 // use the client to send a query
 
-var process = function(qstring) {
+var processWolfResponse = function(qstring, callback) {
   waClient.query(qstring.qs, {
     excludePodId: ['Plot', 'PlotOfSolutionSet', 'PlotOfSolutionSet', 'RootPlot', 'NumberLine'],
     includePodId: ['Input', 'Result'],
@@ -125,8 +96,47 @@ var process = function(qstring) {
   .then(function(qr) {
     console.log('Writing to ' + qstring.file);
     fs.writeFileSync(qstring.file, JSON.stringify(JSON.parse(qr.toJson()), null, 2));
+    var results = {};
     for (var pod of qr.pods()) {
-      console.log(pod.id);
+      if (pod.failed()) {
+        console.log("Pod failed for unknown reason.");
+      }
+      if ("Input" === pod.id) {
+        if ("Derivative" === pod.getTitle()) { // Derivative pods have result with input, gotta split it
+          var targetSubPodImg = pod.subPods()[0].img[0];
+          var targetTextParts = targetSubPodImg.alt.split("=");
+          results = {
+            input: {
+              image: targetSubPodImg.src,
+              text: targetTextParts[0].trim(),
+            },
+            output: {
+              image: targetSubPodImg.src,
+              text: targetTextParts[1].trim()
+            }
+          };
+
+          callback(results);
+          return;
+        } else {
+          var targetSubPodImg = pod.subPods()[0].img[0];
+          results.input = {
+            image: targetSubPodImg.src,
+            text: targetSubPodImg.alt.trim()
+          };
+        }
+      } else if ("Result" === pod.id) {
+        var targetSubPodImg = pod.subPods()[0].img[0];
+        results.output = {
+          image: targetSubPodImg.src,
+          text: targetSubPodImg.alt.trim()
+        };
+
+        callback(results);
+        return;
+      } else {
+        console.log("Unknown pod ID found: " + pod.id);
+      }
     };
     {
       /*for (var pod of qr.pods()) {
@@ -208,7 +218,11 @@ var process = function(qstring) {
 }
 
 for (var qstring of qsArray) {
-  process(qstring);
+  processWolfResponse(qstring, (results) => {
+    //console.log(results);
+    console.log(results.input.text);/////////////////////////////////////////////////////////
+    console.log(results.output.text);
+  });
 }
 
 /*var alexa = require('alexa-utils');

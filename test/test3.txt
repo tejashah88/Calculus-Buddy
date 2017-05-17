@@ -5,7 +5,7 @@
         {
           "img": [
             {
-              "src": "http://www3.wolframalpha.com/Calculate/MSP/MSP3801hic5i152842fg8600004b840h8a663d0c7a?MSPStoreType=image/gif&s=12",
+              "src": "http://www3.wolframalpha.com/Calculate/MSP/MSP8712102fdidc924d8gh0000168cd27gg70gb47e?MSPStoreType=image/gif&s=16",
               "alt": "(10 x^2 + sin^2(x) - 11 x^2) + 5 x",
               "title": "(10 x^2 + sin^2(x) - 11 x^2) + 5 x",
               "width": "188",
@@ -27,7 +27,7 @@
         {
           "img": [
             {
-              "src": "http://www3.wolframalpha.com/Calculate/MSP/MSP3811hic5i152842fg8600005hb8bded6de7b72b?MSPStoreType=image/gif&s=12",
+              "src": "http://www3.wolframalpha.com/Calculate/MSP/MSP8722102fdidc924d8gh000045hhi2ehebb95250?MSPStoreType=image/gif&s=16",
               "alt": "-x^2 + 5 x + sin^2(x)",
               "title": "-x^2 + 5 x + sin^2(x)",
               "width": "121",
@@ -53,13 +53,13 @@
   "datatypes": "Math",
   "timedout": "",
   "timedoutpods": "",
-  "timing": "2.221",
-  "parsetiming": "1.079",
+  "timing": "1.76",
+  "parsetiming": "1.046",
   "parsetimedout": "false",
-  "recalculate": "http://www3.wolframalpha.com/api/v2/recalc.jsp?id=MSPa3771hic5i152842fg8600000hgggh80738b8g3c&s=12",
-  "id": "MSPa3781hic5i152842fg8600001a05i7018eh6f5b4",
+  "recalculate": "",
+  "id": "MSPa8692102fdidc924d8gh00003e7f262ii4hd6203",
   "host": "http://www3.wolframalpha.com",
-  "server": "12",
-  "related": "http://www3.wolframalpha.com/api/v2/relatedQueries.jsp?id=MSPa3791hic5i152842fg86000045h107hfc7ieab44&s=12",
+  "server": "16",
+  "related": "http://www3.wolframalpha.com/api/v2/relatedQueries.jsp?id=MSPa8702102fdidc924d8gh00004fgbi514276b620b&s=16",
   "version": "2.6"
 }

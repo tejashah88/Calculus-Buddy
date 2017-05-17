@@ -5,7 +5,7 @@
         {
           "img": [
             {
-              "src": "http://www3.wolframalpha.com/Calculate/MSP/MSP3541fi36ie92bf649ch0000275027a3b637fh8i?MSPStoreType=image/gif&s=10",
+              "src": "http://www3.wolframalpha.com/Calculate/MSP/MSP91ci8a076035i197f0000517bg5dhcbc9dg3a?MSPStoreType=image/gif&s=15",
               "alt": "solve x = 2 y + 3\ny = 5 x - 2",
               "title": "solve x = 2 y + 3\ny = 5 x - 2",
               "width": "163",
@@ -27,7 +27,7 @@
         {
           "img": [
             {
-              "src": "http://www3.wolframalpha.com/Calculate/MSP/MSP3551fi36ie92bf649ch00005329eh41d4ggb454?MSPStoreType=image/gif&s=10",
+              "src": "http://www3.wolframalpha.com/Calculate/MSP/MSP101ci8a076035i197f00002a3d1cc805g4ca87?MSPStoreType=image/gif&s=15",
               "alt": "x = 1/9 and y = -13/9",
               "title": "x = 1/9 and y = -13/9",
               "width": "140",
@@ -67,13 +67,13 @@
   "datatypes": "Solve",
   "timedout": "",
   "timedoutpods": "",
-  "timing": "1.158",
-  "parsetiming": "0.686",
+  "timing": "1.319",
+  "parsetiming": "0.6950000000000001",
   "parsetimedout": "false",
-  "recalculate": "http://www3.wolframalpha.com/api/v2/recalc.jsp?id=MSPa3511fi36ie92bf649ch0000401hh2h87gf16f5i&s=10",
-  "id": "MSPa3521fi36ie92bf649ch000032155gi5d9b3ibf7",
+  "recalculate": "",
+  "id": "MSPa71ci8a076035i197f00002eiaae82ahc5af9b",
   "host": "http://www3.wolframalpha.com",
-  "server": "10",
-  "related": "http://www3.wolframalpha.com/api/v2/relatedQueries.jsp?id=MSPa3531fi36ie92bf649ch00005921d6be29b2h7ab&s=10",
+  "server": "15",
+  "related": "http://www3.wolframalpha.com/api/v2/relatedQueries.jsp?id=MSPa81ci8a076035i197f00003eb9dae2b7080g60&s=15",
   "version": "2.6"
 }

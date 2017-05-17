@@ -5,7 +5,7 @@
         {
           "img": [
             {
-              "src": "http://www3.wolframalpha.com/Calculate/MSP/MSP27920g6hb974d5d579600005i9e4fc3chfb7b6d?MSPStoreType=image/gif&s=6",
+              "src": "http://www3.wolframalpha.com/Calculate/MSP/MSP161fi5cei4abb0ec60000030gihfh011e47b84?MSPStoreType=image/gif&s=10",
               "alt": "solve sin(theta) = 1/sqrt(2)  for  theta",
               "title": "solve sin(theta) = 1/sqrt(2)  for  theta",
               "width": "266",
@@ -27,7 +27,7 @@
         {
           "img": [
             {
-              "src": "http://www3.wolframalpha.com/Calculate/MSP/MSP28020g6hb974d5d5796000036e2c1c8eh3c8d4i?MSPStoreType=image/gif&s=6",
+              "src": "http://www3.wolframalpha.com/Calculate/MSP/MSP171fi5cei4abb0ec6000000i40fi621be6304f?MSPStoreType=image/gif&s=10",
               "alt": "theta = 1/4 (8 pi n + pi) and n element Z",
               "title": "theta = 1/4 (8 pi n + pi) and n element Z",
               "width": "185",
@@ -39,7 +39,7 @@
         {
           "img": [
             {
-              "src": "http://www3.wolframalpha.com/Calculate/MSP/MSP28120g6hb974d5d579600003g7bd8h72546fc9f?MSPStoreType=image/gif&s=6",
+              "src": "http://www3.wolframalpha.com/Calculate/MSP/MSP181fi5cei4abb0ec6000002i5ea9iadi290bcb?MSPStoreType=image/gif&s=10",
               "alt": "theta = 1/4 pi (8 n + 3) and n element Z",
               "title": "theta = 1/4 pi (8 n + 3) and n element Z",
               "width": "184",
@@ -70,7 +70,7 @@
             {
               "img": [
                 {
-                  "src": "http://www3.wolframalpha.com/Calculate/MSP/MSP28220g6hb974d5d579600000g5781b3d958iidb?MSPStoreType=image/gif&s=6",
+                  "src": "http://www3.wolframalpha.com/Calculate/MSP/MSP191fi5cei4abb0ec60000026bceggid9gagehc?MSPStoreType=image/gif&s=10",
                   "alt": " is the set of integers",
                   "title": " is the set of integers",
                   "width": "145",
@@ -110,13 +110,13 @@
   "datatypes": "Solve",
   "timedout": "",
   "timedoutpods": "",
-  "timing": "2.095",
-  "parsetiming": "1.228",
+  "timing": "2.551",
+  "parsetiming": "1.2630000000000001",
   "parsetimedout": "false",
-  "recalculate": "http://www3.wolframalpha.com/api/v2/recalc.jsp?id=MSPa27620g6hb974d5d579600001adcid150gc0bd76&s=6",
-  "id": "MSPa27720g6hb974d5d579600002efhd10g2g617gah",
+  "recalculate": "",
+  "id": "MSPa141fi5cei4abb0ec60000046e499hhe682ei06",
   "host": "http://www3.wolframalpha.com",
-  "server": "6",
-  "related": "http://www3.wolframalpha.com/api/v2/relatedQueries.jsp?id=MSPa27820g6hb974d5d57960000388e370c05i8f990&s=6",
+  "server": "10",
+  "related": "http://www3.wolframalpha.com/api/v2/relatedQueries.jsp?id=MSPa151fi5cei4abb0ec6000002ca43678c55610fi&s=10",
   "version": "2.6"
 }

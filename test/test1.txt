@@ -5,7 +5,7 @@
         {
           "img": [
             {
-              "src": "http://www3.wolframalpha.com/Calculate/MSP/MSP2831e8hccecc0d0db1800001c9441a9b2b5c6ae?MSPStoreType=image/gif&s=13",
+              "src": "http://www3.wolframalpha.com/Calculate/MSP/MSP311d783dig7h9324970000680eafe80a8aebb9?MSPStoreType=image/gif&s=17",
               "alt": " integral (10 x^2 + sin^2(x)) dx + 5 x",
               "title": " integral (10 x^2 + sin^2(x)) dx + 5 x",
               "width": "175",
@@ -27,7 +27,7 @@
         {
           "img": [
             {
-              "src": "http://www3.wolframalpha.com/Calculate/MSP/MSP2841e8hccecc0d0db180000418dghia25995b94?MSPStoreType=image/gif&s=13",
+              "src": "http://www3.wolframalpha.com/Calculate/MSP/MSP321d783dig7h9324970000507a4ggg6d17dgf6?MSPStoreType=image/gif&s=17",
               "alt": "(10 x^3)/3 + (11 x)/2 - 1/4 sin(2 x)",
               "title": "(10 x^3)/3 + (11 x)/2 - 1/4 sin(2 x)",
               "width": "165",
@@ -53,13 +53,13 @@
   "datatypes": "Math",
   "timedout": "",
   "timedoutpods": "",
-  "timing": "2.358",
-  "parsetiming": "1.667",
+  "timing": "2.398",
+  "parsetiming": "1.68",
   "parsetimedout": "false",
-  "recalculate": "http://www3.wolframalpha.com/api/v2/recalc.jsp?id=MSPa2801e8hccecc0d0db18000033g5353g5a573e26&s=13",
-  "id": "MSPa2811e8hccecc0d0db18000045a81g64a31c2192",
+  "recalculate": "",
+  "id": "MSPa291d783dig7h93249700002d6ih5f10c9a96a9",
   "host": "http://www3.wolframalpha.com",
-  "server": "13",
-  "related": "http://www3.wolframalpha.com/api/v2/relatedQueries.jsp?id=MSPa2821e8hccecc0d0db1800002b9cghe6c1id49d5&s=13",
+  "server": "17",
+  "related": "http://www3.wolframalpha.com/api/v2/relatedQueries.jsp?id=MSPa301d783dig7h93249700003c7a3bgf1hd7886d&s=17",
   "version": "2.6"
 }

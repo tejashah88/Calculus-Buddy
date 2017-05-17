@@ -5,7 +5,7 @@
         {
           "img": [
             {
-              "src": "http://www3.wolframalpha.com/Calculate/MSP/MSP1982266cdha3a715igg00005dhgd4h05903e4id?MSPStoreType=image/gif&s=8",
+              "src": "http://www3.wolframalpha.com/Calculate/MSP/MSP1811hiebbg2098ig0gf00004gic7gh669f51hc4?MSPStoreType=image/gif&s=12",
               "alt": "roots x^2 - 2 = 0",
               "title": "roots x^2 - 2 = 0",
               "width": "158",
@@ -27,7 +27,7 @@
         {
           "img": [
             {
-              "src": "http://www3.wolframalpha.com/Calculate/MSP/MSP1992266cdha3a715igg00000dhe84cicg53601a?MSPStoreType=image/gif&s=8",
+              "src": "http://www3.wolframalpha.com/Calculate/MSP/MSP1821hiebbg2098ig0gf00001814fa24h99d3i55?MSPStoreType=image/gif&s=12",
               "alt": "x =  ± sqrt(2)",
               "title": "x =  ± sqrt(2)",
               "width": "64",
@@ -67,13 +67,13 @@
   "datatypes": "Solve",
   "timedout": "",
   "timedoutpods": "",
-  "timing": "0.781",
-  "parsetiming": "0.353",
+  "timing": "0.723",
+  "parsetiming": "0.337",
   "parsetimedout": "false",
-  "recalculate": "http://www3.wolframalpha.com/api/v2/recalc.jsp?id=MSPa1952266cdha3a715igg000017c6g6917356103h&s=8",
-  "id": "MSPa1962266cdha3a715igg000037768fd08ea376hh",
+  "recalculate": "",
+  "id": "MSPa1791hiebbg2098ig0gf000065b5641bh1dd7cee",
   "host": "http://www3.wolframalpha.com",
-  "server": "8",
-  "related": "http://www3.wolframalpha.com/api/v2/relatedQueries.jsp?id=MSPa1972266cdha3a715igg00005508eid5e9g7h067&s=8",
+  "server": "12",
+  "related": "http://www3.wolframalpha.com/api/v2/relatedQueries.jsp?id=MSPa1801hiebbg2098ig0gf000046e3ei5054gbb085&s=12",
   "version": "2.6"
 }
