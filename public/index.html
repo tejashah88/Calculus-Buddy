@@ -1,62 +1,5 @@
 <!DOCTYPE html>
 <html>
-  <!-- <head>
-    <meta charset="utf-8">
-    <title>Welcome to Firebase Hosting</title>
-    <style media="screen">
-      body {
-        font-family: Roboto, Arial, sans-serif;
-        background: #ECEFF1;
-        color: rgba(0,0,0,0.87);
-      }
-
-      a {
-        color: rgb(3,155,229);
-      }
-
-      #message {
-        max-width: 400px;
-        margin: 40px auto;
-        box-shadow: 0 1px 3px 0 rgba(0,0,0,0.2),0 1px 1px 0 rgba(0,0,0,0.14),0 2px 1px -1px rgba(0,0,0,0.12);
-        border-radius: 2px;
-        background: white;
-        padding: 16px 24px;
-      }
-
-      #message h1 {
-        font-size: 22px;
-        font-weight: 500;
-        text-align: center;
-        margin: 0 0 16px;
-      }
-
-      #message p {
-        font-weight: 300;
-        line-height: 150%;
-      }
-
-      #message ul {
-        list-style: none;
-        margin: 16px 0 0;
-        padding: 0;
-        text-align: center;
-      }
-
-      #message li a {
-        display: inline-block;
-        padding: 8px;
-        text-transform: uppercase;
-        text-decoration: none;
-        font-weight: 500;
-        background: rgb(3,155,229);
-        color: white;
-        border: 1px solid rgb(3,155,229);
-        border-radius: 3px;
-        font-size: 14px;
-        box-shadow: 0 2px 5px 0 rgba(0,0,0,.26);
-      }
-    </style>
-  </head> -->
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -84,11 +27,10 @@
     <!-- Add IntroJs styles -->
     <link href="css/introjs.min.css" rel="stylesheet">
     
-    <!--'intent-utterance-generator' npm module-->
-    <script src="js/intent-utterance-generator-web.js"></script>
     <!--clipboard.js-->
     <script src="js/clipboard.min.js"></script>
   </head>
+
   <body>
     <a href="https://github.com/tejashah88/calculus-buddy"><img style="position: absolute; top: 0; left: 0; border: 0;" src="assets/img/github-banner.png" alt="Fork me on GitHub"></a>
     
@@ -96,28 +38,8 @@
       <div class="container">
         <div class="big-title">
           <h1>Calculus Buddy</h1>
-          <h2>A website that allows you to generate numerous utterances with a simplistic GUI.</h2>
+          <h2>An Alexa skill that helps you with any math problem, ranging from simple arithmetic to calculus.</h2>
           <p class="lead">Shoutout to <a href="https://github.com/miguelmota">miguelmota</a> for his <a href="https://github.com/miguelmota/intent-utterance-generator">intent-utterance-generator</a> node module!</p>
-        </div>
-
-        <div class="instruction-box" data-position="auto" data-step="3" data-intro="You can check out the syntax for generating the utterances here.">
-          <h2 style="text-align: center;">Syntax for utterance generator<button class="btn btn-link btn-lg" type="button" data-toggle="collapse" data-target="#helpCollapse" aria-expanded="false" aria-controls="helpCollapse">Toggle</button></h2>
-
-          <div class="collapse" id="helpCollapse">
-            <div class="card card-block">
-              <p>The syntax is very similar to the original syntax for making the utterances. You can check it out <a href="https://developer.amazon.com/public/solutions/alexa/alexa-skills-kit/docs/defining-the-voice-interface#h2_sample_utterances">here</a>. The only difference is that the new syntax makes it easier to create variations of utterances with parenthesis groups.</p>
-              <pre class="code-area">
-Input: "(hello|hi) world"
-Output: "hello world", "hi world"</pre>
-
-              <p>You also can specify the parenthesis group to be 'optional', with the '|' symbol.</p>
-              <pre class="code-area">
-Input: "I (love|hate) (|big) dogs"
-Output: "I love big dogs", "I love dogs", "I hate big dogs", "I hate dogs"</pre>
-              <p>Note that <code class="code-area-inline">(|big|small)</code> would work the same as <code class="code-area-inline">(big|small)</code>. I'm working a fix at the moment.</p>
-              <p>If you want more examples, the original author of the node module, <a href="https://github.com/miguelmota">miguelmota</a>, has some <a href="https://github.com/miguelmota/intent-utterance-expander#usage">here</a>!</p>
-            </div>
-          </div>
         </div>
 
         <div class="container">
